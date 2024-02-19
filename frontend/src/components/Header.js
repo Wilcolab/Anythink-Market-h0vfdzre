@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../imgs/topbar_logo.png";
 
+
 const LoggedOutView = () => {
   return (
     <ul className="navbar-nav ml-auto">
@@ -49,8 +50,7 @@ const LoggedInView = (props) => {
   );
 };
 
-class Header extends React.Component {
-  render() {
+const Header = () => {
     return (
       <nav
         className="navbar navbar-expand-md navbar-dark"
@@ -68,6 +68,5 @@ class Header extends React.Component {
       </nav>
     );
   }
-}
 
 export default Header;
